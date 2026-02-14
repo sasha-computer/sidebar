@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "Berkeley Mono", "SF Mono", ui-monospace, monospace;
+  --font-sans: "Berkeley Mono", "SF Mono", ui-monospace, monospace;
+
+  --color-base: #1e1e2e;
+  --color-surface: #262637;
+  --color-overlay: #313244;
+  --color-muted: #6c7086;
+  --color-subtle: #a6adc8;
+  --color-text: #cdd6f4;
+  --color-accent: #89b4fa;
+  --color-green: #a6e3a1;
+  --color-red: #f38ba8;
+  --color-yellow: #f9e2af;
+  --color-peach: #fab387;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-base);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar but keep scrolling */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-accent);
+  color: var(--color-base);
+}
